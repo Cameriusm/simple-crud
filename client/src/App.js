@@ -12,15 +12,45 @@ function App() {
     <div className="App">
       <div className="information">
         <label>Name:</label>
-        <input type="text" name="" />
+        <input
+          type="text"
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+          name=""
+        />
         <label>Age:</label>
-        <input type="number" name="" />
+        <input
+          type="number"
+          onChange={(e) => {
+            setAge(e.target.value);
+          }}
+          name=""
+        />
         <label>Country:</label>
-        <input type="text" name="" />
+        <input
+          type="text"
+          onChange={(e) => {
+            setCountry(e.target.value);
+          }}
+          name=""
+        />
         <label>Position:</label>
-        <input type="text" name="" />
+        <input
+          type="text"
+          onChange={(e) => {
+            setPosition(e.target.value);
+          }}
+          name=""
+        />
         <label>Wage (year):</label>
-        <input type="number" name="" />
+        <input
+          type="number"
+          onChange={(e) => {
+            setWage(e.target.value);
+          }}
+          name=""
+        />
         <button>Add Employee</button>
       </div>
     </div>
