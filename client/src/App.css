@@ -10,7 +10,7 @@
   width: 100%;
   justify-content: center;
 }
-.information input {
+input {
   width: 300px;
   height: 50px;
   font-size: 20px;
@@ -34,6 +34,7 @@ button {
 }
 
 .employee {
+  justify-self: space-between;
   width: 700px;
   height: auto;
   border: 1px solid black;
@@ -42,7 +43,9 @@ button {
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
 }
-
+.employee div {
+  width: 50%;
+}
 .employee h3 {
   margin: 20px;
 }
