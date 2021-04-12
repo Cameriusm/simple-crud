@@ -3,6 +3,8 @@ const app = express();
 const mysql = require('mysql');
 const cors = require('cors');
 
+const PORT = 3001;
+
 app.use(cors());
 app.use(express.json());
 
@@ -70,6 +72,6 @@ app.delete('/delete/:id', (req, res) => {
   });
 });
 
-app.listen(3001, () => {
-  console.log('Yay, your server is running on port 3001');
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`Server running on porn ${PORT}`);
 });
