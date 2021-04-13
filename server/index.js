@@ -9,13 +9,13 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  user: 'root',
-  host: 'localhost',
-  password: 'root',
-  database: 'employeesystem',
+  user: 'b245f5a1060f91',
+  host: 'us-cdbr-east-03.cleardb.com',
+  password: '22da33d8',
+  database: 'heroku_a1cde8e915558c4',
 });
 
-app.post('/create', (req, res) => {
+mysql: app.post('/create', (req, res) => {
   const name = req.body.name;
   const age = req.body.age;
   const country = req.body.country;
